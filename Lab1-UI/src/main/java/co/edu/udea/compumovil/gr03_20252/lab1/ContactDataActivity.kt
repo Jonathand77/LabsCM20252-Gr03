@@ -9,8 +9,8 @@ import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Surface
 import androidx.compose.ui.Modifier
-import co.edu.udea.compumovil.gr03_20252.lab1.ui.ContactDataScreen
-import co.edu.udea.compumovil.gr03_20252.lab1.ui.theme.Theme // Asegúrate de que este es tu tema
+import co.edu.udea.compumovil.gr03_20252.lab1.ui.theme.ContactDataScreen
+import co.edu.udea.compumovil.gr03_20252.lab1.ui.theme.LabsCM20252Gr03Theme
 import viewmodel.ContactViewModel
 
 class ContactDataActivity : ComponentActivity() {
@@ -20,7 +20,7 @@ class ContactDataActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContent {
-            LabsCM20231Gr01Theme {
+            LabsCM20252Gr03Theme {
                 Surface(
                     modifier = Modifier.fillMaxSize(),
                     color = MaterialTheme.colorScheme.background
