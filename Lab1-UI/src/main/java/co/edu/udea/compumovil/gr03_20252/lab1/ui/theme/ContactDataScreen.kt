@@ -6,6 +6,7 @@ import androidx.compose.material3.*
 import androidx.compose.runtime.*
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.platform.LocalSoftwareKeyboardController
 import androidx.compose.ui.text.input.KeyboardCapitalization
 import androidx.compose.ui.text.input.KeyboardType
 import androidx.compose.ui.unit.dp
@@ -31,6 +32,13 @@ fun ContactDataScreen(
         "Bogotá", "Medellín", "Cali", "Barranquilla", "Cartagena", "Cúcuta",
         "Bucaramanga", "Pereira", "Manizales", "Santa Marta"
     ) }
+
+    val keyboardController = LocalSoftwareKeyboardController.current
+
+    // Lanzamos efecto cuando entra la pantalla
+    LaunchedEffect(Unit) {
+        keyboardController?.show() // Fuerza mostrar teclado al iniciar
+    }
 
     Column(
         modifier = Modifier

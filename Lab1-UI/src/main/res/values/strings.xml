@@ -1,3 +1,14 @@
 <resources>
-    <string name="app_name">LabsCM20252-Gr03</string>
+    <!-- Pantalla Información Personal -->
+    <string name="app_name">Laboratorio 1</string>
+    <string name="personal_data_title">Información Personal</string>
+    <string name="first_name">Nombres</string>
+    <string name="last_name">Apellidos</string>
+    <string name="next">Siguiente</string>
+
+    <!-- Pantalla Información de Contacto -->
+    <string name="contact_data_title">Información de Contacto</string>
+    <string name="email">Correo electrónico</string>
+    <string name="phone">Teléfono</string>
+    <string name="save_success">Datos guardados correctamente</string>
 </resources>

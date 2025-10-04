@@ -1,0 +1,14 @@
+<resources>
+    <!-- Personal Information Screen -->
+    <string name="app_name">Lab 1</string>
+    <string name="personal_data_title">Personal Information</string>
+    <string name="first_name">First Name</string>
+    <string name="last_name">Last Name</string>
+    <string name="next">Next</string>
+
+    <!-- Contact Information Screen -->
+    <string name="contact_data_title">Contact Information</string>
+    <string name="email">Email</string>
+    <string name="phone">Phone</string>
+    <string name="save_success">Data saved successfully</string>
+</resources>

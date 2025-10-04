@@ -9,6 +9,7 @@ import androidx.compose.runtime.*
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.platform.LocalContext
+import androidx.compose.ui.platform.LocalSoftwareKeyboardController
 import androidx.compose.ui.text.input.KeyboardCapitalization
 import androidx.compose.ui.text.input.KeyboardType
 import androidx.compose.ui.tooling.preview.Preview
@@ -39,6 +40,13 @@ fun PersonalDataScreen(
             calendar.get(Calendar.MONTH),
             calendar.get(Calendar.DAY_OF_MONTH)
         )
+    }
+
+    val keyboardController = LocalSoftwareKeyboardController.current
+
+    // Lanzamos efecto cuando entra la pantalla
+    LaunchedEffect(Unit) {
+        keyboardController?.show() // Fuerza mostrar teclado al iniciar
     }
 
     Column(
