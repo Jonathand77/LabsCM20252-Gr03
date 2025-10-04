@@ -19,7 +19,7 @@ private val LightColors = lightColorScheme(
 )
 
 @Composable
-fun LabsCM20231Gr01Theme(content: @Composable () -> Unit) {
+fun LabsCM20252Gr03Theme(content: @Composable () -> Unit) {
     MaterialTheme(
         colorScheme = LightColors,
         typography = Typography,
